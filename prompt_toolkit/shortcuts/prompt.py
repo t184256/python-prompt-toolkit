@@ -1037,10 +1037,10 @@ class PromptSession(Generic[_T]):
                 reserve_space_for_menu if reserve_space_for_menu != 0 else 5
             )
             self.layout = None
-            warnings.warn(
-                "PromptSession(,reserve_space_for_menu,...) is deprecated, specify parameter completion_menu_rows instead.",
-                DeprecationWarning,
-            )
+            #warnings.warn(
+            #    "PromptSession(,reserve_space_for_menu,...) is deprecated, specify parameter completion_menu_rows instead.",
+            #    DeprecationWarning,
+            #)
 
         if self.layout is None:  # parameter change above forced rethinking layout
             self._rethink_layout()
